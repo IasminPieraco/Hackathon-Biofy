@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Hackathon_Biofy"
 include(":app")
- 
