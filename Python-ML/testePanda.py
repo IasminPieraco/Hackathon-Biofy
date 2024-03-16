@@ -6,7 +6,7 @@ venda = {'data': ['15/02/2024', '16/02/2024'],
          'qnt':[50,70]}
 
 vendas_df = pd.DataFrame(venda)
-venda_teste = pd.read_excel("weather.xlsx")
+venda_teste = pd.read_excel("dataset/weather.xlsx")
 
 print(vendas_df)
 print(venda_teste)
