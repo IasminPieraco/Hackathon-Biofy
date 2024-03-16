@@ -1,0 +1,34 @@
+<!-- layout_last_page.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <!-- Informações sobre Exposição ao Raio Solar -->
+    <TextView
+        android:id="@+id/textViewSolarExposure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exposição ao Raio Solar: "
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Outras Informações sobre o Sol -->
+    <TextView
+        android:id="@+id/textViewSunInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outras Informações sobre o Sol: "
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botão de Voltar -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_gravity="center" />
+
+</LinearLayout>

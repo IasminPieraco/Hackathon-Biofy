@@ -1,0 +1,88 @@
+<!-- layout_second_page.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <!-- Análise do Clima -->
+    <TextView
+        android:id="@+id/textViewWeatherAnalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Análise do Vento"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Temperatura -->
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperatura: "
+        android:textSize="18sp" />
+
+    <!-- Pressão Atmosférica -->
+    <TextView
+        android:id="@+id/textViewPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressão Atmosférica: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Velocidade do Vento -->
+    <TextView
+        android:id="@+id/textViewWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Velocidade do Vento: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Direção do Vento -->
+    <TextView
+        android:id="@+id/textViewWindDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direção do Vento: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Sentido do Vento -->
+    <TextView
+        android:id="@+id/textViewWindSense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sentido do Vento: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botões de Navegação -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Botão para Página Anterior -->
+        <Button
+            android:id="@+id/buttonPreviousPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Página Anterior"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Botão para Próxima Página -->
+        <Button
+            android:id="@+id/buttonNextPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Próxima Página"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
