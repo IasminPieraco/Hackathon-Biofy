@@ -58,27 +58,41 @@ body, html {
     display: flex;
     /* align-items: flex-start;flex;
     justify-content: flex-end; */
-    border: 1px solid #333;
+    border:none;
     cursor: pointer;
     margin: 5%;
     border-radius: 20px;
     width: 90%;
     height: 15vh;
     z-index: 1;
+    background-color: rgba(255,255,255,0.02);
+    background-image: url('./img/botao.png');
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center;
 
-    background-size: cover;
     
     filter: brightness(0.5); /* ajusta o brilho para 50% */
 }
 
+.box img{
+    width: 70%;
+    height: 100%;
+    transform: scale(0.5,0.7);
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
 .box span{
     width: 80%;
     position: absolute;
-    top: 24%;
-    left: 14%;
+    top: 28%;
+    left: 10%;
     text-align: end;
-    color: #fff;
+    color: #3be0ef;
     font-weight: bolder;
+    text-shadow: 0 0 0.8em rgba(0, 28, 244, 0.5), 0 0 0.8em currentColor;
+  box-shadow: inset 0 0 10 0.5em 0 var('blue'), 0 10px 0.5em 0 var("blue");
 }
 
 
@@ -93,18 +107,23 @@ body, html {
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
-    background-color: rgba(70, 75, 88, 0.5);
-    color: #fff;
+    background-color:rgba(255,255,255,0.08);
+    color: #ffffff;
     padding: 20px;
     width: 70%;
-    height: 70vh;
+    height: 70%;
     border-radius: 20px;
+    background-image: url('./img/Popup.png');
+    background-repeat: no-repeat;
+    background-size: 100% 103%;
+    background-position: center;
+    
 }
 
 
 .close {
     position: relative;
-    left: 93%;
+    left: 95%;
     top: 3%;
     background: transparent;
     text-decoration: none;
@@ -120,8 +139,7 @@ body, html {
   }
 
 .modal-content{
-    border: 2px #fff solid;
-    border-radius: 20px;
+    
     height: 100%;
     width: 100%;
 }
@@ -135,6 +153,7 @@ body, html {
 
 .modal-body p{
     text-align: center;
+    padding: 0% 5%;
 }
 
 .modal-header{
@@ -147,6 +166,12 @@ body, html {
     
 }
 
+.modal-header u{
+    text-decoration-color: rgb(32, 174, 246);
+}
+
 #agua, #ar, #fogo, #terra{
-    margin-left: 18%;
+    margin-left: 12%;
+    width: 80%;
+    height: 300px;
 }
