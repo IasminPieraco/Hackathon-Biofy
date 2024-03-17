@@ -13,7 +13,6 @@ class Hidroeletrica : AppCompatActivity() {
     lateinit var Bt_menu : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_hidroeletrica)
         Bt_proximo = findViewById(R.id.Bt_proximo)
         Bt_proximo.setOnClickListener {
