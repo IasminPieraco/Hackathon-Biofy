@@ -19,11 +19,11 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/_7efc7003a7d0c1424dfb799a9504d96" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Bt_Eolica"
         android:layout_width="279dp"
         android:layout_height="75dp"
-        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/botao"
         android:text="Eolica"
         android:textColor="#2CA3D6"
         android:textSize="25dp"
@@ -32,11 +32,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Bt_Solar"
         android:layout_width="279dp"
         android:layout_height="75dp"
-        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/botao"
+        android:pointerIcon="arrow"
         android:text="Solar"
         android:textColor="#2CA3D6"
         android:textSize="25dp"
@@ -59,11 +60,11 @@
         app:layout_constraintVertical_bias="0.094"
         app:srcCompat="@drawable/logo_renova_ai" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Bt_Biomassa"
         android:layout_width="281dp"
         android:layout_height="73dp"
-        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/botao"
         android:text="Biomassa"
         android:textColor="#2CA3D6"
         android:textSize="25dp"
@@ -74,13 +75,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.633" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Bt_Hidro"
         android:layout_width="283dp"
         android:layout_height="77dp"
-        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/botao"
         android:text="Hidréletrica"
         android:textColor="#2CA3D6"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

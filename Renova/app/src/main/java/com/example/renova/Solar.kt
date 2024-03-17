@@ -13,7 +13,6 @@ class Solar : AppCompatActivity() {
     lateinit var Bt_menu : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_solar)
         Bt_proximo = findViewById(R.id.Bt_proximo)
         Bt_proximo.setOnClickListener {
