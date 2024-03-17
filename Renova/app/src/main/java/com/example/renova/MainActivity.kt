@@ -7,9 +7,6 @@ import android.view.View.OnClickListener
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.github.kittinunf.fuel.httpGet
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,12 +18,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val requisicao = Request(Method.GET, "https://xkcd.com/info.0.json")
-        val cliente: HttpHandler = JavaHttpClient()
-        val respostaRequisicao = cliente(requisicao)
-
-        println(respostaRequisicao)
 
         Bt_Solar = findViewById(R.id.Bt_Solar)
         Bt_Solar.setOnClickListener {
