@@ -7,6 +7,7 @@
     <title>RenovAI</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="shortcut icon" href="img/Logo Renova AI.png" type="image/x-icon">
 </head>
 
@@ -20,19 +21,19 @@
             <div id="div-logo">
                 <img src="./img/Logo Renova AI.png" alt="logo" id="logo">
             </div>
-            <div class="box" onclick="abrirModal(1)">
+            <div class="box" onclick="abrirMenu(1)">
                 <img src="./img/eolica.png" alt="eolica">
                 <span>Eólica</span>
             </div>
-            <div class="box" onclick="abrirModal(2)">
+            <div class="box" onclick="abrirMenu(2)">
                 <img src="./img/eletrica.png" alt="folha" style="margin-top: 5%; ">
                 <span>Solar</span>
             </div>
-            <div class="box" onclick="abrirModal(3)">
+            <div class="box" onclick="abrirMenu(3)">
                 <img src="./img/folha.png" alt="folha">
                 <span>Biomassa</span>
             </div>
-            <div class="box" onclick="abrirModal(4)" >
+            <div class="box" onclick="abrirMenu(4)">
                 <img src="./img/gota.png" alt="folha">
                 <span>Hidrelétrica</span>
             </div>
@@ -60,7 +61,14 @@
                             como o planejamento
                             de investimentos e expansão futura da usina.
                         </p>
-                        <div id="ar"></div>
+                        <div class="row">
+                            <div id="ar"></div>
+                            <div class="form">
+                                <img src="./img/vento.png" alt="Rain Precipitation">
+                                <h2>2,371 Km/h </h2>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -87,7 +95,13 @@
                             com a rede elétrica, a gestão de riscos associados ao clima e o planejamento de
                             investimentos futuros.
                         </p>
-                        <div id="fogo"></div>
+                        <div class="row">
+                            <div id="fogo"></div>
+                            <div class="form">
+                                <img src="./img/UV.png" alt="Rain Precipitation">
+                                <h2>1 (Baixo) </h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,7 +125,13 @@
                             a gestão eficiente dos recursos de biomassa, a integração confiável com a rede elétrica e a
                             minimização dos impactos ambientais.
                         </p>
-                        <div id="terra"></div>
+                        <div class="row">
+                            <div id="terra"></div>
+                            <div class="form">
+                                <img src="./img/gota.png" alt="Rain Precipitation">
+                                <h2>20 mm</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,7 +155,35 @@
                             a gestão eficiente dos recursos hídricos, a integração confiável com a rede elétrica e a
                             minimização dos impactos ambientais.
                         </p>
-                        <div id="agua"></div>
+                        <div class="row">
+                            <div id="agua"></div>
+                            <div class="form">
+                                <img src="./img/gota.png" alt="Rain Precipitation">
+                                <h2>20 mm </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="menu" tabindex="-1" role="dialog" style="width: 15%; height: 13%;">
+            <div class="modal-dialog" role="document" style="height: 100%; width: 100%;">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <div class="row">
+                            <label for="">Dias a ser previsto:</label>
+                            <input type="number" id="dias" min="1" max="7" value="1">
+                        </div>
+                        <div class="row">
+                            <label for="">Dia:</label>
+                            <input type="date" id="data" value="2021-01-01">
+                        </div>
+                        <div class="row">
+                            <button id="cancel">Cancelar</button>
+                            <button id="preve">Prever</button>
+                        </div>
+
                     </div>
                 </div>
             </div>

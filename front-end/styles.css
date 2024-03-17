@@ -76,7 +76,7 @@ body, html {
 }
 
 .box img{
-    width: 70%;
+    width: 60%;
     height: 100%;
     transform: scale(0.5,0.7);
     position: absolute;
@@ -87,7 +87,7 @@ body, html {
     width: 80%;
     position: absolute;
     top: 28%;
-    left: 10%;
+    left: 8%;
     text-align: end;
     color: #3be0ef;
     font-weight: bolder;
@@ -111,7 +111,7 @@ body, html {
     color: #ffffff;
     padding: 20px;
     width: 70%;
-    height: 70%;
+    height: 80%;
     border-radius: 20px;
     background-image: url('./img/Popup.png');
     background-repeat: no-repeat;
@@ -172,6 +172,112 @@ body, html {
 
 #agua, #ar, #fogo, #terra{
     margin-left: 12%;
-    width: 80%;
+    width: 400px;
     height: 300px;
 }
+
+.rain-icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+.rain-icon img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    width: 200px;
+    margin: auto;
+}
+
+.form img {
+    width: 80px;
+    height: 80px;
+}
+
+.form 
+
+.form input {
+    padding: 5px;
+    width: 100%;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #5038c4; /* green */
+    
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 4%;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: #5038c4; /* green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+.form button:hover {
+    background-color: #28ced1; /* dark green */
+}
+
+#menu{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(255,255,255,0.02);
+    color: #ffffff;
+    padding: 40px;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    background-image: url('./img/botao.png');
+    background-repeat: no-repeat;
+    background-size: 100% 103%;
+    background-position: center;
+}
+
+#menu button{
+    padding: 5px 10px;
+    background-color: #5038c4; /* green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+#menu button:hover {
+    background-color: #28ced1; /* dark green */
+}
+
