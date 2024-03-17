@@ -1,0 +1,152 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(2, 2, 4);
+    /* opcional: adicione outras propriedades para estilizar o texto ou elementos acima do plano de fundo */
+    color: #fff; /* texto branco para melhor contraste */
+}
+
+#logo{
+    transform: scale(0.7,0.7);
+    margin-right: 15%;
+}
+
+#div-logo {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-start;
+}
+
+.estrela{
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    left: 20%;
+}
+
+#globo{
+    position:absolute;
+    top: 40%;
+    left: -10%;
+    transform: scale(150%,150%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.pagina {
+    width: 80%;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    /* align-items: flex-start;flex;
+    justify-content: flex-end; */
+    border: 1px solid #333;
+    cursor: pointer;
+    margin: 5%;
+    border-radius: 20px;
+    width: 90%;
+    height: 15vh;
+    z-index: 1;
+
+    background-size: cover;
+    
+    filter: brightness(0.5); /* ajusta o brilho para 50% */
+}
+
+.box span{
+    width: 80%;
+    position: absolute;
+    top: 24%;
+    left: 14%;
+    text-align: end;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+
+.box:hover{
+    filter: brightness(1); /* ajusta o brilho para 50% */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(70, 75, 88, 0.5);
+    color: #fff;
+    padding: 20px;
+    width: 70%;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+
+.close {
+    position: relative;
+    left: 93%;
+    top: 3%;
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    font-size:xx-large;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.close:hover {
+    transform: scale(1.5) rotate(180deg);
+  }
+
+.modal-content{
+    border: 2px #fff solid;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modal-body p{
+    text-align: center;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    position: relative;
+    top: -10%;
+    height: 10%;
+    
+}
+
+#agua, #ar, #fogo, #terra{
+    margin-left: 18%;
+}
